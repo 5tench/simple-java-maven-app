@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    tools {
-    maven 'Maven 3.9.9'  // must match name in Jenkins UI
-    jdk 'JDK 21'         // optional if your build needs Java 21
-  }
     stages {
         stage('Build') {
             steps {
